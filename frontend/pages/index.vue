@@ -1,10 +1,14 @@
 <template>
   <client-only>
-    <leaflet-map
-      :geojson="geojson"
-      @boundUpdated="onBoundUpdated"
-      @updateSelectedType="onSelectedTypeUpdated"
-    />
+    <v-container fluid>
+      <v-row fill-height align-center justify-center>
+        <leaflet-map
+          :geojson="geojson"
+          @boundUpdated="onBoundUpdated"
+          @updateSelectedType="onSelectedTypeUpdated"
+        />
+      </v-row>
+    </v-container>
   </client-only>
 </template>
 <script>
